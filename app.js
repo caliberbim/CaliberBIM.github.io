@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Apply rotation based on mouse coordinates
             // Default is rotateX(-20deg) rotateY(45deg)
-            const rotateX = -20 - (y * 15); // Tilt up/down
-            const rotateY = 45 + (x * 20);  // Pan left/right
+            const rotateX = -20 - (y * 90); // Tilt up/down more heavily (90deg)
+            const rotateY = 45 + (x * 180); // Rotate fully left/right (180deg)
 
             scene.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
         });
