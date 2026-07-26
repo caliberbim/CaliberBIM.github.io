@@ -618,6 +618,10 @@ h1, h2, h3 {
     transition: var(--transition);
 }
 
+.service-gallery {
+    min-width: 0; /* Fixes grid blowout issue so images don't overflow the card */
+}
+
 .service-card:hover {
     border-color: rgba(0, 163, 224, 0.2);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
